@@ -278,7 +278,7 @@ const ConfigPage: React.FC = () => {
               {workflowConfig.actions.map((action, index) => (
                 <li key={action.id} className="bg-gray-50 p-3 rounded-md flex items-center">
                   <span className="font-medium text-gray-700 w-8 text-center">{index + 1}.</span>
-                  <span className="flex-grow text-gray-800">{getActionDescription(action)}</span>
+                  <span className="flex-grow text-gray-800 overflow-hidden">{getActionDescription(action)}</span>
                   <div className="flex space-x-1">
                     <button 
                       onClick={() => moveActionUp(index)} 
